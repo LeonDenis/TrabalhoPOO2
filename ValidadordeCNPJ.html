@@ -5,6 +5,7 @@ Criado por Leon Denis Paiva Silva 31-03-2017
 
 <html>
 	<head>
+		<title>Validador CNPJ</title>
 		<script type="text/javascript">
 			function Sonumeros(evt) {
 				var Evento = evt || window.event;
@@ -171,7 +172,7 @@ Criado por Leon Denis Paiva Silva 31-03-2017
 				<td class="CAIXA_TD" style="width: 110px;">CNPJ:</td><td style="width: 140px;">
 				<input type="text" onkeypress="Sonumeros(event);" onfocus="RestaurarAparencia(this);"
 				style="width: 130px; height: 20px;" class="CaixaTexto" maxlength="14" id="TXT_CNPJ" /> </td>
-				<td><input type="button" value="OK" class="Botao"
+				<td><input type="button" value="OK" class="Botao" placeholder="CNPJ"
 				onclick="javascript: validarCNPJ(document.getElementById('TXT_CNPJ').value);" /></td>
 				<td style="width: auto;"><button type="reset" class="Botao">Limpar</button></td>
 			</tr>
